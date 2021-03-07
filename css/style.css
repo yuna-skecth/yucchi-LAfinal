@@ -1,0 +1,549 @@
+/*赤色　#D1322A*/
+/*紺色　#A001B66*/
+/*慶應紺色 #001E62*/
+/*interviewのとこの白色　EFF1F5*/
+/*日本語のfont-family: sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "游ゴシック体", YuGothic; 
+}
+
+#first-view{
+    width: 100%;
+    position: relative;
+    background: red;
+    
+}
+
+#first-view ul{
+    width: 55%;
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+/*    background: blue;*/
+
+}
+
+nav li{
+    float: left;
+    margin-right: 50px;
+    margin-top: 30px;
+    list-style-type: none;
+    
+}
+
+
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+    color: white;
+    font-family: sans-serif;  
+}
+
+nav a:hover{
+    border-bottom: solid 2px #ffffff;
+}
+
+
+.nav-register-button{
+    font-size: 16px;
+    color: #001E62;
+    display: block;
+    width: 163px;
+    background: white;
+    line-height: 40px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.nav-register-button:hover{
+    border-bottom: none;
+    color: white;
+    background: #001E62;
+        transition: 0.8s;
+}
+
+
+.main-right{
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 3;
+/*    position: relative;*/
+}
+
+.titlebox{
+    position: absolute;
+    top:80px;
+    left: 85px;
+    font-size: 52px;
+    color: white;
+/*    text-shadow: */
+}
+
+.titlebox span{
+    color: #D1322A;
+}
+
+.slider img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; 
+}
+
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: green;
+    
+}
+
+
+
+
+
+/*仮。ここ本当はスライドショーにする*/
+.main-left{
+/*    width: 50%;*/
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: -170px;
+  
+}
+
+/*ここからaboutus-section*/
+
+#aboutus-section{
+    width:100%;
+    overflow: hidden;
+    margin-top: -5px;
+    position: relative;
+/*    background: pink;*/
+
+}
+
+.enjin-image {
+    width:490px;
+    height: 675px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    margin-top: 80px;
+}
+
+.hug-image{
+    width:490px;
+    height: 675px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: -1;
+    margin-top: 80px;  
+}
+
+
+.aboutus{
+    width: 485px;
+    height: 765px;
+    background: #001B66;
+    margin: 0 auto;
+    padding-top: 45px;
+    text-align: center;
+    z-index: 2;
+/*    margin-bottom: 255px;*/
+}
+
+
+.aboutus-title h2{
+    color: #D1322A;
+    font-size: 25px;  
+}
+
+.aboutus-title p{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.aboutus-notalone{
+    width: 380px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-left: 30px;
+}
+
+.aboutus-notalone h3{
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: left;
+    line-height: 70px;
+    letter-spacing: 3px;
+}
+
+.aboutus-notalone span{
+    color: #D1322A;
+    font-size: 70px;
+}
+
+.aboutus-text{
+    margin-top: 60px;
+    width:380px;
+    overflow: hidden;
+    color: white;
+    font-size:17px;
+    text-align: left;
+    display: inline-block;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+.katsudou-button{
+    color:white;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: solid #ffffff;
+    display: block;
+    margin: 0 auto;
+    width:200px;
+    margin-top: 30px;
+    padding: 10px;
+    z-index:3;
+}
+
+.katsudou-button:hover{
+    background: lightblue;
+}
+
+
+.about-class h5{
+    font-size: 200px;
+    color: #001E62;
+    opacity: 0.6;
+    line-height: 170px;
+    margin-top: -30px;
+}
+
+/*ここからinterview-section*/
+
+#interview-section{
+    width: 100%;
+/*    overflow: hidden;    */
+/*    background: pink;*/
+    margin-top: 130px;
+}
+
+.interview-container{
+    width: 93%;
+    background: #EFF1F5;
+    height: 700px;
+    z-index: 0;
+    position: relative;
+}
+
+.interview-title{
+    float: right;
+    padding-top: 32px;
+    padding-right: 72px;
+}
+
+.interview-title h2{
+    color: #D1322A;
+    font-size: 80px;
+}
+
+.interview-title p{
+    color: #001E62;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: -20px;
+    padding-left: 3px;
+}
+
+
+.member-photo{
+    width: 89%;
+    height: 380px;
+    background-image: url(../image/dot-background-11.jpg);
+    position: absolute;
+    top:250px;
+    left: 0:
+}
+
+.member-photo img{
+    width: 330px;
+    padding: 0 15px;
+    margin-top: -75px;
+    z-index: 2;
+}
+
+.yuna{
+    margin-left: 60px;
+}
+
+.interview-class h5{
+    font-size: 190px;
+    color: #001E62;
+    opacity: 0.6;
+    line-height: 170px;
+    margin-top: -28px;
+    position: relative;
+
+}
+
+
+
+
+ 
+
+
+
+
+
+
+/*ここからfreshmen-section*/
+
+#freshmen-section{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 130px;
+/*    background: yellow;  */
+    position: relative;
+/*    padding-bottom: 300px;*/
+
+}
+
+.freshmen-container{
+    width: 85%;
+    height: 730px;
+    background-image: url("../image/forfreshmen.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;  
+
+}
+
+.freshmen-title{
+    padding-top: 32px;
+    padding-left: 72px;
+    
+}
+
+
+.freshmen-title h2{
+    color: #D1322A;
+    font-size: 80px;
+}
+
+.freshmen-title p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: -20px;
+    padding-left: 5px;
+}
+
+.freshmen-text{
+    color: white;
+    width: 755px;
+    height: 400px;
+    margin-left: 72px;
+    margin-top: 100px;
+    font-family: sans-serif;
+}
+
+.freshmen-text h3{
+    font-size: 40px;
+}
+
+.freshmen-text p{
+    font-size: 20px;
+    padding-top: 13px;
+}
+
+.freshmen-text h4{
+    padding-top: 66px;
+    font-size: 60px;
+    line-height: 100px;
+    
+}
+.freshmen-text h4 span{
+    font-size: 35px;
+}
+
+.register-button{
+    color: #001E62;
+    text-decoration: none;
+    font-size: 27px;
+    display: inline-block;
+    width: 380px;
+    line-height: 75px;
+    background: white;
+    text-align: center;
+    font-family: sans-serif;
+    position:absolute;
+    top: 568px;
+    right: 7%; 
+}
+
+.register-button:hover{
+    background: lightblue;
+}
+
+.welcome-box{
+    font-family: sans-serif;
+    width: 480px;
+    height: 340px;
+    background: #EFF1F5;
+    position: absolute;
+    bottom: 50px;
+    left:7%;
+    z-index: 2;
+    
+}
+
+.welcome-box h2{
+    color: #D1322A;
+    font-size: 30px;  
+}
+
+.welcome-box p{
+    color: #001E62;
+    padding-top: 38px;
+    font-size: 18px;
+}
+
+.welcome-text{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.freshmen-class h5{
+    font-size: 170px;
+    color: #001E62;
+    opacity: 0.6;
+    line-height: 170px;
+    position: relative;
+    z-index: 1;  
+}
+
+/*
+.welcome-box{
+    display: none;
+}
+*/
+
+
+
+
+
+
+
+/*ここからcontact-section*/
+
+#contact-section{
+    width: 100%;
+    overflow: hidden;
+     color: white;
+    font-family: sans-serif;
+    margin-top: 273px;
+
+}
+
+
+.contact-line{
+    width: 50%;
+    height: 400px;
+    background: #001E62;
+    float: left; 
+}
+
+.contact-line a{
+    display: block;
+    width: 100%;
+    line-height: 65px;
+    border: medium solid #ffffff;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 60px;
+/*    background: red;   */
+}
+
+
+.contact-instagram a{
+    display: block;
+    width: 100%;
+    line-height: 65px;
+    border: medium solid #ffffff;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 36px;
+/*    background: red;   */
+}
+
+#contact-section a:hover{
+    background: lightblue;
+}
+
+
+
+.contact-textbox{
+    width: 62%;
+/*    background: red;*/
+    margin: 0 auto;
+    margin-top: 75px;
+
+}
+
+
+.contact-textbox h3{
+    font-size: 23px;
+}
+
+.contact-textbox p{
+    font-size: 17px;
+    margin-top: 27px;
+}
+
+
+.contact-instagram{
+    width: 50%;
+    height: 400px;
+    background: red;
+    float: left;
+    background-image: url(../image/insta-background.jpg);
+    background-size: cover;
+    background-position:center;    
+}
+
+ footer p{
+    font-size: 17px;
+     color: #001E62;
+     text-align: center;
+     
+     
+    }
+
+
