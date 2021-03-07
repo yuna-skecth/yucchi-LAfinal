@@ -4,52 +4,53 @@
 /*interviewのとこの白色　EFF1F5*/
 /*日本語のfont-family: sans-serif;*/
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "游ゴシック体", YuGothic; 
+    font-family: "游ゴシック体", YuGothic;
 }
 
-#first-view{
+#first-view {
     width: 100%;
     position: relative;
     background: red;
-    
+
 }
 
-#first-view ul{
+#first-view ul {
     width: 55%;
     overflow: hidden;
     z-index: 2;
     position: absolute;
     right: 0;
-/*    background: blue;*/
+    /*    background: blue;*/
 
 }
 
-nav li{
+nav li {
     float: left;
     margin-right: 50px;
     margin-top: 30px;
     list-style-type: none;
-    
+
 }
 
 
-nav a{
+nav a {
     text-decoration: none;
     font-size: 18px;
     transition: 0.5s;
     color: white;
-    font-family: sans-serif;  
+    font-family: sans-serif;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, .5);
 }
 
-nav a:hover{
+nav a:hover {
     border-bottom: solid 2px #ffffff;
 }
 
 
-.nav-register-button{
+.nav-register-button {
     font-size: 16px;
     color: #001E62;
     display: block;
@@ -58,128 +59,120 @@ nav a:hover{
     line-height: 40px;
     text-align: center;
     margin-top: -10px;
+    text-shadow: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
 }
 
-.nav-register-button:hover{
+.nav-register-button:hover {
     border-bottom: none;
     color: white;
     background: #001E62;
-        transition: 0.8s;
+    transition: 0.8s;
 }
 
 
-.main-right{
-    width:100%;
+.main-right {
+    width: 100%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 3;
-/*    position: relative;*/
+    /*    position: relative;*/
 }
 
-.titlebox{
+.keio-title {
     position: absolute;
-    top:80px;
+    top: 80px;
     left: 85px;
     font-size: 52px;
     color: white;
-/*    text-shadow: */
+    text-shadow: 0 5px 5px rgba(0, 0, 0, .8);
+    /*    text-shadow: */
 }
 
-.titlebox span{
+.keio-title span {
     color: #D1322A;
 }
 
-.slider img{
+.slider img {
     width: 100%;
     height: 100vh;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
-.slider{
+.slider {
     width: 100%;
     height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
     background: green;
-    
+
 }
 
 
-
-
-
-/*仮。ここ本当はスライドショーにする*/
-.main-left{
-/*    width: 50%;*/
-    height: 100vh;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: -170px;
-  
-}
 
 /*ここからaboutus-section*/
 
-#aboutus-section{
-    width:100%;
+#aboutus-section {
+    width: 100%;
     overflow: hidden;
     margin-top: -5px;
     position: relative;
-/*    background: pink;*/
+    /*    background: pink;*/
+     text-shadow: 0 5px 5px rgba(0, 0, 0, .5);
 
 }
 
 .enjin-image {
-    width:490px;
-    height: 675px;
+    width: 35%;
+    height: 82vh;
     object-fit: cover;
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     z-index: -1;
     margin-top: 80px;
 }
 
-.hug-image{
-    width:490px;
-    height: 675px;
+.hug-image {
+    width: 35%;
+    height: 82vh;
     object-fit: cover;
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
     z-index: -1;
-    margin-top: 80px;  
+    margin-top: 80px;
 }
 
 
-.aboutus{
-    width: 485px;
-    height: 765px;
+.aboutus {
+    width: 35%;
+    height: 93vh;
     background: #001B66;
     margin: 0 auto;
     padding-top: 45px;
     text-align: center;
     z-index: 2;
-/*    margin-bottom: 255px;*/
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    /*    margin-bottom: 255px;*/
 }
 
 
-.aboutus-title h2{
+.aboutus-title h2 {
     color: #D1322A;
-    font-size: 25px;  
+    font-size: 25px;
 }
 
-.aboutus-title p{
+.aboutus-title p {
     color: white;
     font-size: 15px;
     font-family: sans-serif;
 }
 
-.aboutus-notalone{
+.aboutus-notalone {
     width: 380px;
     overflow: hidden;
     margin: 0 auto;
@@ -187,7 +180,7 @@ nav a:hover{
     padding-left: 30px;
 }
 
-.aboutus-notalone h3{
+.aboutus-notalone h3 {
     color: white;
     font-size: 50px;
     font-family: sans-serif;
@@ -196,43 +189,45 @@ nav a:hover{
     letter-spacing: 3px;
 }
 
-.aboutus-notalone span{
+.aboutus-notalone span {
     color: #D1322A;
     font-size: 70px;
 }
 
-.aboutus-text{
+.aboutus-text {
     margin-top: 60px;
-    width:380px;
+    width: 380px;
     overflow: hidden;
     color: white;
-    font-size:17px;
+    font-size: 17px;
     text-align: left;
     display: inline-block;
     line-height: 30px;
     font-family: sans-serif;
 }
 
-.katsudou-button{
-    color:white;
+.katsudou-button {
+    color: white;
     font-size: 20px;
     font-family: sans-serif;
     text-decoration: none;
     border: solid #ffffff;
     display: block;
     margin: 0 auto;
-    width:200px;
+    width: 200px;
     margin-top: 30px;
     padding: 10px;
-    z-index:3;
+    z-index: 3;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+    
 }
 
-.katsudou-button:hover{
+.katsudou-button:hover {
     background: lightblue;
 }
 
 
-.about-class h5{
+.about-class h5 {
     font-size: 200px;
     color: #001E62;
     opacity: 0.6;
@@ -240,35 +235,43 @@ nav a:hover{
     margin-top: -30px;
 }
 
+
+/*aboutus-sectionのレスポンシブ*/
+@media screen and (max-width:480px){
+    
+}
+
+
 /*ここからinterview-section*/
 
-#interview-section{
+#interview-section {
     width: 100%;
-/*    overflow: hidden;    */
-/*    background: pink;*/
+    /*    overflow: hidden;    */
+    /*    background: pink;*/
     margin-top: 130px;
 }
 
-.interview-container{
+.interview-container {
     width: 93%;
     background: #EFF1F5;
     height: 700px;
     z-index: 0;
     position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .6);
 }
 
-.interview-title{
+.interview-title {
     float: right;
     padding-top: 32px;
     padding-right: 72px;
 }
 
-.interview-title h2{
+.interview-title h2 {
     color: #D1322A;
     font-size: 80px;
 }
 
-.interview-title p{
+.interview-title p {
     color: #001E62;
     font-family: sans-serif;
     font-size: 20px;
@@ -277,27 +280,27 @@ nav a:hover{
 }
 
 
-.member-photo{
+.member-photo {
     width: 89%;
     height: 380px;
     background-image: url(../image/dot-background-11.jpg);
     position: absolute;
-    top:250px;
+    top: 250px;
     left: 0:
 }
 
-.member-photo img{
+.member-photo img {
     width: 330px;
     padding: 0 15px;
     margin-top: -75px;
     z-index: 2;
 }
 
-.yuna{
+.yuna {
     margin-left: 60px;
 }
 
-.interview-class h5{
+.interview-class h5 {
     font-size: 190px;
     color: #001E62;
     opacity: 0.6;
@@ -310,7 +313,7 @@ nav a:hover{
 
 
 
- 
+
 
 
 
@@ -319,40 +322,41 @@ nav a:hover{
 
 /*ここからfreshmen-section*/
 
-#freshmen-section{
+#freshmen-section {
     width: 100%;
     overflow: hidden;
     margin-top: 130px;
-/*    background: yellow;  */
+    /*    background: yellow;  */
     position: relative;
-/*    padding-bottom: 300px;*/
+    /*    padding-bottom: 300px;*/
 
 }
 
-.freshmen-container{
+.freshmen-container {
     width: 85%;
     height: 730px;
     background-image: url("../image/forfreshmen.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    float: right;  
+    float: right;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .6);
 
 }
 
-.freshmen-title{
+.freshmen-title {
     padding-top: 32px;
     padding-left: 72px;
-    
+
 }
 
 
-.freshmen-title h2{
+.freshmen-title h2 {
     color: #D1322A;
     font-size: 80px;
 }
 
-.freshmen-title p{
+.freshmen-title p {
     color: white;
     font-family: sans-serif;
     font-size: 20px;
@@ -360,35 +364,37 @@ nav a:hover{
     padding-left: 5px;
 }
 
-.freshmen-text{
+.freshmen-text {
     color: white;
     width: 755px;
     height: 400px;
     margin-left: 72px;
     margin-top: 100px;
     font-family: sans-serif;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, .5);
 }
 
-.freshmen-text h3{
+.freshmen-text h3 {
     font-size: 40px;
 }
 
-.freshmen-text p{
+.freshmen-text p {
     font-size: 20px;
     padding-top: 13px;
 }
 
-.freshmen-text h4{
+.freshmen-text h4 {
     padding-top: 66px;
     font-size: 60px;
     line-height: 100px;
-    
+
 }
-.freshmen-text h4 span{
+
+.freshmen-text h4 span {
     font-size: 35px;
 }
 
-.register-button{
+.register-button {
     color: #001E62;
     text-decoration: none;
     font-size: 27px;
@@ -398,51 +404,53 @@ nav a:hover{
     background: white;
     text-align: center;
     font-family: sans-serif;
-    position:absolute;
+    position: absolute;
     top: 568px;
-    right: 7%; 
+    right: 7%;
+    z-index: 2;
 }
 
-.register-button:hover{
+.register-button:hover {
     background: lightblue;
 }
 
-.welcome-box{
+.welcome-box {
     font-family: sans-serif;
     width: 480px;
     height: 340px;
     background: #EFF1F5;
     position: absolute;
     bottom: 50px;
-    left:7%;
+    left: 7%;
     z-index: 2;
-    
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+
 }
 
-.welcome-box h2{
+.welcome-box h2 {
     color: #D1322A;
-    font-size: 30px;  
+    font-size: 30px;
 }
 
-.welcome-box p{
+.welcome-box p {
     color: #001E62;
     padding-top: 38px;
     font-size: 18px;
 }
 
-.welcome-text{
+.welcome-text {
     width: 75%;
     margin: 0 auto;
     margin-top: 60px;
 }
 
-.freshmen-class h5{
+.freshmen-class h5 {
     font-size: 170px;
     color: #001E62;
     opacity: 0.6;
     line-height: 170px;
     position: relative;
-    z-index: 1;  
+    z-index: 1;
 }
 
 /*
@@ -459,24 +467,24 @@ nav a:hover{
 
 /*ここからcontact-section*/
 
-#contact-section{
+#contact-section {
     width: 100%;
     overflow: hidden;
-     color: white;
+    color: white;
     font-family: sans-serif;
     margin-top: 273px;
 
 }
 
 
-.contact-line{
+.contact-line {
     width: 50%;
     height: 400px;
     background: #001E62;
-    float: left; 
+    float: left;
 }
 
-.contact-line a{
+.contact-line a {
     display: block;
     width: 100%;
     line-height: 65px;
@@ -486,11 +494,11 @@ nav a:hover{
     text-decoration: none;
     font-size: 20px;
     margin-top: 60px;
-/*    background: red;   */
+    /*    background: red;   */
 }
 
 
-.contact-instagram a{
+.contact-instagram a {
     display: block;
     width: 100%;
     line-height: 65px;
@@ -500,50 +508,48 @@ nav a:hover{
     text-decoration: none;
     font-size: 20px;
     margin-top: 36px;
-/*    background: red;   */
+    /*    background: red;   */
 }
 
-#contact-section a:hover{
+#contact-section a:hover {
     background: lightblue;
 }
 
 
 
-.contact-textbox{
+.contact-textbox {
     width: 62%;
-/*    background: red;*/
+    /*    background: red;*/
     margin: 0 auto;
     margin-top: 75px;
 
 }
 
 
-.contact-textbox h3{
+.contact-textbox h3 {
     font-size: 23px;
 }
 
-.contact-textbox p{
+.contact-textbox p {
     font-size: 17px;
     margin-top: 27px;
 }
 
 
-.contact-instagram{
+.contact-instagram {
     width: 50%;
     height: 400px;
     background: red;
     float: left;
     background-image: url(../image/insta-background.jpg);
     background-size: cover;
-    background-position:center;    
+    background-position: center;
 }
 
- footer p{
+footer p {
     font-size: 17px;
-     color: #001E62;
-     text-align: center;
-     
-     
-    }
+    color: #001E62;
+    text-align: center;
 
 
+}
