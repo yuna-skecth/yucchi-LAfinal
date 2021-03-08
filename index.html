@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/slick.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 
     <title>Keio Girls Golf</title>
-    
-     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-     
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 </head>
 
 <body>
@@ -27,20 +28,22 @@
 
         </nav>
 
-
-        <img src="image/mainvisu3.png" alt="" class="main-right">
-
-        <div class="keio-title">
-            <h1><span>K</span>EIO<br>GIRLS' GOLF<br>TEAM</h1>
+        <div class="rightimg-slider">
+            <div><img src="image/first-view-img1.png" alt=""></div>
+            <div><img src="image/first-view-img2.png" alt=""></div>
+            <div><img src="image/first-view-img3.png" alt=""></div>
+            <div><img src="image/first-view-img4.png" alt=""></div>
         </div>
-         <div class="slider">
-                <div><img src="image/first-view-img1.png" alt=""></div>
-                <div><img src="image/first-view-img2.png" alt=""></div>
-                <div><img src="image/first-view-img3.png" alt=""></div>
-                <div><img src="image/first-view-img4.png" alt=""></div>
+
+        <div class="leftimg">
+            <img src="image/mainvisu3.png" alt="">
+
+            <div class="keio-title">
+                <h1><span>K</span>EIO<br>GIRLS' GOLF<br>TEAM</h1>
             </div>
-      
-        
+        </div>
+
+
     </div>
     <div id="aboutus-section" class="about-class">
         <img src="image/enjin.jpg" alt="" class="enjin-image">
@@ -58,7 +61,10 @@
             </div>
             <a class="katsudou-button" href="http://www.keio-golf.com/blog/cat21939059/index.html" target="_blank">活動内容</a>
         </div>
-        <h5>ABOUT US</h5>
+
+        <div class="fadein">
+            <h5>ABOUT US</h5>
+        </div>
 
     </div>
     <div id="interview-section" class="interview-class">
@@ -124,22 +130,8 @@
     <footer>
         <p>&copy; Keio Girls' Golf Team</p>
     </footer>
-     
-     
 
-    <script>
-        $(document).ready(function() {
-            $('.slider').slick({
-                autoplay: true,
-//                autospeed:3000,
-                dots: false,
-                arrows: false,
-              
-            });
-        });
-
-    </script>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
