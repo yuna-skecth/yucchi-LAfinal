@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/modaal.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/modaal.min.js"></script>
 
     <title>Keio Girls Golf</title>
 
@@ -74,13 +76,76 @@
                 <p>部員の声</p>
             </div>
             <div class="member-photo">
-                <img src="image/yuna.png" alt="" class="yuna ">
-                <img src="image/ayaka.png" alt="" class="ayaka">
-                <img src="image/lisa.png" alt="" class="lisa">
+
+                <a class="js-modal-open" href="" data-target="modal01"><img src="image/yuna.png" alt="" class="yuna"></a>
+
+                <a class="js-modal-open" href="" data-target="modal02"><img src="image/ayaka.png" alt="" class="ayaka"></a>
+
+                <a class="js-modal-open" href="" data-target="modal03"><img src="image/lisa.png" alt="" class="lisa"></a>
+
+                <div id="modal01" class="modal js-modal">
+                    <div class="modal__bg js-modal-close"></div>
+
+                    <div class="modal_bluebox">
+
+                        <div class="modal-interview-title">
+                            <h2>INTERVIEW</h2>
+                            <p>部員の声</p>
+                        </div>
+
+                        <div class="modal__content_yuna">
+
+                            <div class="modal_flexbox">
+                                <img src="image/yunaw:shadow.png" alt="" class="yunashadow">
+
+                                <div class="modal_text">
+                                    <h3>田中佑奈<span>法学部政治学科3年</span></h3>
+                                    <p>ゴルフは努力した分だけ必ず結果がスコアとなって返ってくる
+                                        スポーツです。そして、体育会ゴルフ部には結果が出るまでの
+                                        辛い期間もそれを一緒に乗り越えてくれる仲間がいます。体育
+                                        会なので規律が厳しい面もありますが、部員が一致団結し、目
+                                        標に向かって助け合いながら日々努力する環境が魅力の一つだ
+                                        と思います。</p>
+
+                                </div>
+                            </div>
+
+
+                            <a class="js-modal-close" href="">閉じる</a>
+                        </div>
+                    </div>
+                    <!--modal__inner-->
+                </div>
+                <!--modal-->
+
+                <div id="modal02" class="modal js-modal">
+                    <div class="modal__bg js-modal-close"></div>
+                    <div class="modal_bluebox">
+
+                        <p>2つ目モーダルウィンドウです。ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
+                        <a class="js-modal-close" href="">閉じる</a>
+                    </div>
+                    <!--modal__inner-->
+                </div>
+                <!--modal-->
+
+                <div id="modal03" class="modal js-modal">
+                    <div class="modal__bg js-modal-close"></div>
+                    <div class="modal_bluebox">
+                        <p>3つ目モーダルウィンドウです。ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
+                        <a class="js-modal-close" href="">閉じる</a>
+                    </div>
+                    <!--modal__inner-->
+                </div>
+                <!--modal-->
+
             </div>
+
         </div>
-        <h5>INTERVIEW</h5>
+
     </div>
+
+
     <div id="freshmen-section" class="freshmen-class">
         <div class="freshmen-container">
             <div class="freshmen-title">
@@ -126,6 +191,22 @@
 
 
     </div>
+
+
+
+    <!--
+    <div class="content">
+        <a class="js-modal-open" href=""><img src="image/ayaka.png" alt=""></a>
+    </div>
+    <div class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+            <p>ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
+            <a class="js-modal-close" href="">閉じる</a>
+        </div>
+    </div>
+-->
+
 
     <footer>
         <p>&copy; Keio Girls' Golf Team</p>

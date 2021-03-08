@@ -162,7 +162,7 @@ nav a:hover {
 
 .aboutus {
     width: 35%;
-    height: 93vh;
+    height: 100vh;
     background: #001B66;
     margin: 0 auto;
     padding-top: 45px;
@@ -188,7 +188,7 @@ nav a:hover {
     width: 380px;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 40px;
     padding-left: 30px;
 }
 
@@ -207,7 +207,7 @@ nav a:hover {
 }
 
 .aboutus-text {
-    margin-top: 60px;
+    margin-top: 45px;
     width: 380px;
     overflow: hidden;
     color: white;
@@ -227,7 +227,7 @@ nav a:hover {
     display: block;
     margin: 0 auto;
     width: 200px;
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 10px;
     z-index: 3;
     box-shadow: 0 0 15px rgba(0, 0, 0, .6);
@@ -332,10 +332,103 @@ nav a:hover {
     line-height: 170px;
     margin-top: -28px;
     position: relative;
+    z-index: -2;
 
 }
 
 
+/*モーダル*/
+
+/*
+body.fixed {
+	position: fixed;
+	left: 0;
+}
+*/
+
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 7;
+}
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.modal_bluebox{
+    background: #fff;
+    background-image: url(../image/modal-back-20.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 50%;
+/*    padding: 40px;*/
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height: 75vh;
+
+}
+
+.modal-interview-title{
+/*    background: green;*/
+    width: 30%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 1.5%;
+}
+
+.modal-interview-title h2{
+    color: #D1322A;
+    font-size: 40px;
+    line-height: 38px;
+}
+
+
+.modal-interview-title p{
+    color: white;
+    font-family: sans-serif;
+    
+}
+
+.modal__content_yuna{
+    width: 84%;
+    height: 76%;
+    background:#EFF1F5;
+    margin: 0 auto;
+    margin-top: 7%;
+ 
+}
+
+.modal__content_yuna img{
+    width: 31%;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+.yunashadow{
+    background:rgb(255,0,0,0.3);
+  
+}
+
+.modal_flexbox{
+    width: 90%;
+    overflow: hidden;
+    background: green;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_text{
+    width: 50%;
+}
 
 
 
@@ -354,6 +447,7 @@ nav a:hover {
     /*    background: yellow;  */
     position: relative;
     /*    padding-bottom: 300px;*/
+    z-index: -1;
 
 }
 
@@ -578,3 +672,6 @@ footer p {
 
 
 }
+
+
+
