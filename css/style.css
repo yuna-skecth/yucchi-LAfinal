@@ -805,12 +805,12 @@ body.fixed {
 
 }
 
-.sp_register-button {
-    display: none;
-}
-
 .pc_register-button:hover {
     background: lightblue;
+}
+
+.sp_register-button {
+    display: none;
 }
 
 .welcome-box {
