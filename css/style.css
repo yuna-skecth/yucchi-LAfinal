@@ -272,7 +272,7 @@ nav a:hover {
     border: solid #ffffff;
     display: block;
     margin: 0 auto;
-    width: 200px;
+    width: 41%;
     margin-top: 10px;
     padding: 10px;
     z-index: 3;
@@ -291,6 +291,7 @@ nav a:hover {
     opacity: 0.6;
     line-height: 170px;
     margin-top: -30px;
+    text-shadow: none;
 }
 
 
@@ -363,6 +364,10 @@ nav a:hover {
         font-size: 18px;
         padding: 8px;
         margin-top: 25px;
+    }
+
+    .katsudou-button:active {
+        background: lightblue;
     }
 
     .about-class h5 {
@@ -472,16 +477,16 @@ nav a:hover {
 
     .interview-title {
         float: right;
-        padding-top: 15px;
+        padding-top: 20px;
         padding-right: 20px;
     }
 
     .interview-title h2 {
-        font-size: 45px;
+        font-size: 38px;
     }
 
     .interview-title p {
-        font-size: 17px;
+        font-size: 12px;
         margin-top: -17px;
         padding-left: 0px;
     }
@@ -495,6 +500,16 @@ nav a:hover {
     .interview-dotbox img {
         margin-top: 0;
     }
+
+    .interview-class h5 {
+
+        font-size: 70px;
+        line-height: 100px;
+        margin-top: -20px;
+        margin-left: 60px;
+    }
+
+
 
 }
 
@@ -626,7 +641,7 @@ body.fixed {
         margin-top: 0;
     }
 
-     .modal_whitebox {
+    .modal_whitebox {
         width: 84%;
         height: 82%;
         margin-top: 18%;
@@ -634,7 +649,7 @@ body.fixed {
 
     .modal_bluebox {
         width: 88%;
-        height:600px;
+        height: 600px;
         background-image: url(../image/sp_bluebox.png);
     }
 
@@ -660,42 +675,39 @@ body.fixed {
         font-size: 12px;
 
     }
-    
+
     .modal_textbox {
-    width: 88%;
-    padding-top: 20px;
-}
-    
-      .modal_textbox h3 {
-    font-size: 23px;
-}
+        width: 88%;
+        padding-top: 20px;
+    }
 
-.modal_textbox h3 span{
-    font-size:12px
-}
+    .modal_textbox h3 {
+        font-size: 23px;
+    }
 
-.modal_textbox p{
-    font-size:13px
-}
-    
+    .modal_textbox h3 span {
+        font-size: 12px
+    }
+
+    .modal_textbox p {
+        font-size: 13px
+    }
+
     .js-modal-close img {
-    width: 30px;
-    height: 30px;
-        top:2%;
-    right:1.1%;
-    
+        width: 30px;
+        height: 30px;
+        top: 2%;
+        right: 1.1%;
+
+    }
+
+
+
+
+
+
+
 }
-    
-    
-    
-    
-    
-
-
-}
-
-
-
 
 
 
@@ -707,7 +719,6 @@ body.fixed {
     width: 100%;
     overflow: hidden;
     margin-top: 130px;
-    /*    background: yellow;  */
     position: relative;
     /*    padding-bottom: 300px;*/
     z-index: -1;
@@ -748,12 +759,13 @@ body.fixed {
 
 .freshmen-text {
     color: white;
-    width: 755px;
-    height: 400px;
+    width: 68.5%;
+    height: 55%;
     margin-left: 72px;
     margin-top: 100px;
     font-family: sans-serif;
     text-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+
 }
 
 .freshmen-text h3 {
@@ -776,12 +788,13 @@ body.fixed {
     font-size: 35px;
 }
 
-.register-button {
+.pc_register-button {
     color: #001E62;
     text-decoration: none;
     font-size: 27px;
     display: inline-block;
-    width: 340px;
+    /*    width: 340px;*/
+    width: 22%;
     line-height: 75px;
     background: white;
     text-align: center;
@@ -789,17 +802,21 @@ body.fixed {
     position: absolute;
     top: 568px;
     right: 5%;
-    /*        z-index: 2;*/
+
 }
 
-.register-button:hover {
+.sp_register-button {
+    display: none;
+}
+
+.pc_register-button:hover {
     background: lightblue;
 }
 
 .welcome-box {
     font-family: sans-serif;
-    width: 480px;
-    height: 340px;
+    width: 35%;
+    height: 32%;
     background: #EFF1F5;
     position: absolute;
     bottom: 50px;
@@ -832,19 +849,128 @@ body.fixed {
     opacity: 0.6;
     line-height: 170px;
     position: relative;
-    z-index: 0;
+
 }
 
-/*
-.welcome-box{
-    display: none;
+
+/*freshmen-sectionのレスポンシブ*/
+
+@media screen and (max-width:480px) {
+
+    #freshmen-section {
+        margin-top: 70px;
+    }
+
+
+    .freshmen-container {
+        width: 94%;
+        height: 475px;
+    }
+
+    .freshmen-title {
+        padding-top: 20px;
+        padding-left: 20px;
+
+    }
+
+
+    .freshmen-title h2 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .freshmen-title p {
+        font-size: 12px;
+        margin-top: -8px;
+        padding-left: 4px;
+    }
+
+    .freshmen-text {
+        width: 94%;
+        margin-left: 20px;
+        margin-top: 24px;
+
+    }
+
+    .freshmen-text h3 {
+        font-size: 23px;
+    }
+
+    .freshmen-text p {
+        font-size: 16px;
+        padding-top: 14px;
+    }
+
+    .freshmen-text h4 {
+        padding-top: 30px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .freshmen-text h4 span {
+        font-size: 15px;
+    }
+
+    .pc_register-button {
+        display: none;
+    }
+
+    /*    ここ動かない　sp_register-button*/
+
+    .sp_register-button {
+        display: block;
+        color: #001E62;
+        text-decoration: none;
+        font-size: 18px;
+        width: 57%;
+        line-height: 45px;
+        background: white;
+        text-align: center;
+        font-family: sans-serif;
+        margin-left: 20px;
+        margin-top: 26px;
+    }
+
+    .sp_register-button:active {
+        background: pink;
+
+    }
+
+    .welcome-box {
+        width: 86%;
+        height: 25%;
+        left: 4%;
+        bottom: 16%;
+    }
+
+    .welcome-text {
+        width: 86%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .welcome-box h2 {
+        color: #D1322A;
+        font-size: 22px;
+
+    }
+
+    .welcome-box p {
+
+        padding-top: 11px;
+        font-size: 13px;
+    }
+
+    .freshmen-class h5 {
+        display: inline-block;
+        font-size: 70px;
+        line-height: 75px;
+        margin-top: -20px;
+        padding-top: 170px;
+        margin-left: 60px;
+    }
+
 }
-*/
-
-
-
-
-
 
 
 /*ここからcontact-section*/
@@ -858,15 +984,24 @@ body.fixed {
 
 }
 
+.contact_big_flexbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sp_contact_small_flexbox {
+    display: none;
+}
 
 .contact-line {
     width: 50%;
     height: 400px;
     background: #001E62;
-    float: left;
 }
 
-.contact-line a {
+.contact-link a {
     display: block;
     width: 100%;
     line-height: 65px;
@@ -875,22 +1010,23 @@ body.fixed {
     color: white;
     text-decoration: none;
     font-size: 20px;
+
     margin-top: 60px;
-    /*    background: red;   */
+
 }
 
+.contact-instagram {
+    width: 50%;
+    height: 400px;
+    background: red;
+    background-image: url(../image/insta-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .contact-instagram a {
-    display: block;
-    width: 100%;
-    line-height: 65px;
-    border: medium solid #ffffff;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
     margin-top: 36px;
-    /*    background: red;   */
 }
 
 #contact-section a:hover {
@@ -901,10 +1037,8 @@ body.fixed {
 
 .contact-textbox {
     width: 62%;
-    /*    background: red;*/
     margin: 0 auto;
     margin-top: 75px;
-
 }
 
 
@@ -918,15 +1052,83 @@ body.fixed {
 }
 
 
-.contact-instagram {
-    width: 50%;
-    height: 400px;
-    background: red;
-    float: left;
-    background-image: url(../image/insta-background.jpg);
-    background-size: cover;
-    background-position: center;
+
+
+
+/*contact-sectionのレスポンシブ*/
+
+@media screen and (max-width:480px) {
+
+    #contact-section {
+        margin-top: 100px;
+    }
+
+    .contact_big_flexbox {
+        flex-wrap: wrap;
+
+    }
+
+    
+    .contact-line {
+        width: 100%;
+        height: 150px;
+    }
+
+    .contact-instagram {
+        width: 100%;
+        height: 150px;
+    }
+
+    .contact-textbox {
+        display: none;
+    }
+
+    .sp_contact_small_flexbox {
+        display: block;
+        width: 88%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sp_contact_textbox {
+        width: 60%;
+        margin-top: 25px;
+    }
+
+    .sp_contact_link {
+        width: 30%;        
+    }
+    
+/*    インスタのボタンだけずれるから*/
+    .sp_line_link{
+        margin-top: -20px;
+    }
+
+    .sp_contact_link a {
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+    .sp_contact_textbox h3 {
+        font-size: 13px;
+    }
+
+    .sp_contact_textbox p {
+        font-size: 11px;
+        margin-top: 7px;
+    }
+
+
+
+
+
+
+
 }
+
+
 
 footer p {
     font-size: 17px;
