@@ -14,8 +14,7 @@
 #first-view {
     width: 100%;
     position: relative;
-    background: blue;
-
+    /*    background: blue;*/
 }
 
 #first-view ul {
@@ -98,7 +97,7 @@ nav a:hover {
 
 }
 
-.leftimg img {
+.pc_leftimg {
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -106,6 +105,10 @@ nav a:hover {
     background-position: center center;
     z-index: 3;
     /*    position: relative;*/
+}
+
+.sp_leftimg {
+    display: none;
 }
 
 .keio-title {
@@ -129,7 +132,40 @@ nav a:hover {
     nav {
         display: none;
     }
+
+    .pc_leftimg {
+        display: none;
+    }
+
+    .sp_leftimg {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 3;
+    }
+
+
+    .keio-title {
+        top: 100px;
+        left: 20px;
+        font-size: 26px;
+        width: 90%;
+    }
+
+    .rightimg-slider {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
 }
+
+
+
 
 
 
@@ -273,26 +309,27 @@ nav a:hover {
 
 /*aboutus-sectionのレスポンシブ*/
 @media screen and (max-width:480px) {
-    
+
     .enjin-image {
-    width: 28%;
-    height: 450px;
-    margin-top: 60px;
-}
-    
+        width: 28%;
+        height: 450px;
+        margin-top: 60px;
+    }
+
     .hug-image {
-         width: 30%;
-    height: 450px;
-    margin-top: 60px;
-   
-    right: -60px;
-   
-}
+        width: 30%;
+        height: 450px;
+        margin-top: 60px;
+
+        right: -60px;
+
+    }
+
     .aboutus-box {
         width: 72%;
         height: 540px;
         padding-top: 25px;
-    
+
 
     }
 
@@ -327,12 +364,13 @@ nav a:hover {
         padding: 8px;
         margin-top: 25px;
     }
-    
+
     .about-class h5 {
-    font-size: 70px;
-    line-height: 100px;
- 
-}
+        font-size: 70px;
+        line-height: 100px;
+
+    }
+
 
 
 
@@ -379,30 +417,30 @@ nav a:hover {
 }
 
 
-.member-photo {
+.interview-dotbox {
     width: 89%;
-    height: 380px;
+    height: 54%;
     background-image: url(../image/dot-background-11.jpg);
     position: absolute;
     top: 250px;
     left: 0:
 }
 
-.member-photo img {
-    width: 330px;
-    padding: 0 15px;
-    margin-top: -75px;
+.interview-dotbox img {
+    width: 28%;
+    padding: 0 1.3%;
+    margin-top: -6.5%;
     z-index: 2;
     transition-duration: 0.3s;
 }
 
-.member-photo img:hover {
-    transform: scale(1.2, 1.2);
+.interview-dotbox img:hover {
+    transform: scale(1.1, 1.1);
 
 }
 
 .yuna {
-    margin-left: 60px;
+    margin-left: 4%;
 }
 
 .interview-class h5 {
@@ -417,6 +455,49 @@ nav a:hover {
     z-index: -2;
 
 }
+
+
+
+/*interview-sectionのレスポンシブ　モーダル以外*/
+@media screen and (max-width:480px) {
+
+    #interview-section {
+        margin-top: 70px;
+    }
+
+    .interview-container {
+        width: 96%;
+        height: 370px;
+    }
+
+    .interview-title {
+        float: right;
+        padding-top: 15px;
+        padding-right: 20px;
+    }
+
+    .interview-title h2 {
+        font-size: 45px;
+    }
+
+    .interview-title p {
+        font-size: 17px;
+        margin-top: -17px;
+        padding-left: 0px;
+    }
+
+    .interview-dotbox {
+        width: 94%;
+        top: 110px;
+
+    }
+
+    .interview-dotbox img {
+        margin-top: 0;
+    }
+
+}
+
 
 
 /*モーダル*/
@@ -499,7 +580,7 @@ body.fixed {
 
 .modal_flexbox {
     width: 90%;
-    padding-top: 40px;
+    padding-top: 4%;
     overflow: hidden;
     margin: 0 auto;
     display: flex;
@@ -536,8 +617,82 @@ body.fixed {
 }
 
 
+/*interview-section　モーダルのレスポンシブ*/
+@media screen and (max-width:480px) {
+
+    .modal_whitebox img {
+        width: 60%;
+        margin-left: 4%;
+        margin-top: 0;
+    }
+
+     .modal_whitebox {
+        width: 84%;
+        height: 82%;
+        margin-top: 18%;
+    }
+
+    .modal_bluebox {
+        width: 88%;
+        height:600px;
+        background-image: url(../image/sp_bluebox.png);
+    }
+
+    .modal_flexbox {
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .modal-interview-title {
+        margin-top: 2%;
+        margin-left: 2.5%;
+    }
+
+    .modal-interview-title h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
 
 
+    .modal-interview-title p {
+        font-size: 12px;
+
+    }
+    
+    .modal_textbox {
+    width: 88%;
+    padding-top: 20px;
+}
+    
+      .modal_textbox h3 {
+    font-size: 23px;
+}
+
+.modal_textbox h3 span{
+    font-size:12px
+}
+
+.modal_textbox p{
+    font-size:13px
+}
+    
+    .js-modal-close img {
+    width: 30px;
+    height: 30px;
+        top:2%;
+    right:1.1%;
+    
+}
+    
+    
+    
+    
+    
+
+
+}
 
 
 
