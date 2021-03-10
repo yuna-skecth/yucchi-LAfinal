@@ -895,7 +895,9 @@ body.fixed {
     bottom: 50px;
     left: 7%;
     z-index: 2;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    box-shadow: -15px 20px 10px rgba(198, 53, 39, 0.5);
+/*     box-shadow: 0 -10px -15px 0 rgba(198, 53, 39, 0.5);*/
+
 
 }
 
@@ -1015,6 +1017,7 @@ body.fixed {
         height: 25%;
         left: 4%;
         bottom: 16%;
+         box-shadow: -7px 10px 10px rgba(198, 53, 39, 0.5);
     }
 
     .welcome-text {
