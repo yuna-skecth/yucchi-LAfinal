@@ -11,21 +11,21 @@
 }
 
 
-#first-view {
+#header {
+    position: fixed;
     width: 100%;
-    position: relative;
-    /*    background: blue;*/
-}
-
-#first-view ul {
-    width: 55%;
     overflow: hidden;
-    z-index: 2;
-    position: absolute;
-    right: 0;
-    /*    background: blue;*/
+    padding-bottom: 10px;
+    z-index: 3;
 
 }
+
+
+
+ul {
+    float: right;
+}
+
 
 nav li {
     float: left;
@@ -66,9 +66,27 @@ nav a:hover {
 .nav-register-button:hover {
     border-bottom: none;
     color: white;
-    background: #001E62;
+    background: #D1322A;
     transition: 0.8s;
 }
+
+.headerColor-default {
+  background: rgb(0, 30, 98, 0.95) ;
+  
+}
+
+
+
+
+
+
+#first-view {
+    width: 100%;
+    position: relative;
+    /*    background: blue;*/
+}
+
+
 
 .rightimg-slider {
     width: 70%;
@@ -275,13 +293,16 @@ nav a:hover {
     width: 41%;
     margin-top: 10px;
     padding: 10px;
-    z-index: 3;
+/*    z-index: 3;*/
     box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+     transition: 0.5s;
+    
+    
 
 }
 
 .katsudou-button:hover {
-    background: lightblue;
+    background: #D1322A;
 }
 
 
@@ -292,6 +313,7 @@ nav a:hover {
     line-height: 170px;
     margin-top: -30px;
     text-shadow: none;
+    z-index: -2;
 }
 
 
@@ -367,7 +389,7 @@ nav a:hover {
     }
 
     .katsudou-button:active {
-        background: lightblue;
+        background: #D1322A;
     }
 
     .about-class h5 {
@@ -472,7 +494,7 @@ nav a:hover {
 
     .interview-container {
         width: 96%;
-        height: 370px;
+        height: 600px;
     }
 
     .interview-title {
@@ -493,20 +515,69 @@ nav a:hover {
 
     .interview-dotbox {
         width: 94%;
+        height: 75%;
         top: 110px;
 
     }
-
-    .interview-dotbox img {
-        margin-top: 0;
+    
+    .sp_member_container{
+        width: 100%;
     }
 
+    .sp_member_container img {
+        margin-top: 0;
+        width: 48%;
+        position: absolute;
+    }
+    
+      .sp_member_container img:active {
+           transform: scale(1.1, 1.1);
+
+       
+    }
+    
+    
+   
     .interview-class h5 {
 
         font-size: 70px;
         line-height: 100px;
         margin-top: -20px;
         margin-left: 60px;
+    }
+
+    .sp_interview-flexbox {
+        width: 80%;
+        background: green;
+
+    }
+
+    .interview-upperbox {
+        background: yellow;
+
+    }
+
+    .interview-bottombox {
+        background: purple;
+    }
+
+    .yuna {
+        top: 46%;
+        margin-left: 0;
+        left: 0;
+        margin-left: 2%;
+        width: 50%;
+    }
+
+    .lisa {
+        top: 46%;
+        right: -20px;
+    }
+
+    .ayaka {
+        left: 27%;
+        top: -20px;
+
     }
 
 
@@ -635,8 +706,10 @@ body.fixed {
 /*interview-section　モーダルのレスポンシブ*/
 @media screen and (max-width:480px) {
 
-    .modal_whitebox img {
+    .modal_flexbox img {
         width: 60%;
+        height: 27vh;
+        object-fit: cover;
         margin-left: 4%;
         margin-top: 0;
     }
@@ -721,7 +794,6 @@ body.fixed {
     margin-top: 130px;
     position: relative;
     /*    padding-bottom: 300px;*/
-    z-index: -1;
 
 }
 
@@ -802,11 +874,12 @@ body.fixed {
     position: absolute;
     top: 568px;
     right: 5%;
+    transition: 0.5s;
 
 }
 
 .pc_register-button:hover {
-    background: lightblue;
+    background: #D1322A;
 }
 
 .sp_register-button {
@@ -849,6 +922,7 @@ body.fixed {
     opacity: 0.6;
     line-height: 170px;
     position: relative;
+    z-index: -1;
 
 }
 
@@ -1005,7 +1079,7 @@ body.fixed {
     display: block;
     width: 100%;
     line-height: 65px;
-    border: medium solid #ffffff;
+    border: 4px solid #ffffff;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -1029,8 +1103,12 @@ body.fixed {
     margin-top: 36px;
 }
 
+#contact-section a{
+    transition:0.5s;
+}
+
 #contact-section a:hover {
-    background: lightblue;
+    background:#D1322A;
 }
 
 
@@ -1068,7 +1146,7 @@ body.fixed {
 
     }
 
-    
+
     .contact-line {
         width: 100%;
         height: 150px;
@@ -1098,11 +1176,16 @@ body.fixed {
     }
 
     .sp_contact_link {
-        width: 30%;        
+        width: 30%;
+        
     }
     
-/*    インスタのボタンだけずれるから*/
-    .sp_line_link{
+    .sp_contact_link a{
+         border: 2px solid #ffffff;
+    }
+
+    /*    インスタのボタンだけずれるから*/
+    .sp_line_link {
         margin-top: -20px;
     }
 

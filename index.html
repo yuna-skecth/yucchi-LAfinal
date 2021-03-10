@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/modaal.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
@@ -18,17 +19,28 @@
 </head>
 
 <body>
-    <div id="first-view">
-        <nav>
-            <ul>
-                <li><a href="#aboutus-section">私たちについて</a></li>
-                <li><a href="http://www.keio-golf.com/blog/cat21939059/index.html" target="_blank">活動紹介</a></li>
-                <li><a href="#interview-section">部員の声</a></li>
-                <li><a href="#freshmen-section">新歓情報</a></li>
-                <li><a class="nav-register-button" href="https://www.google.com/intl/ja_jp/forms/about/" target="_blank">説明会お申し込み</a></li>
-            </ul>
 
-        </nav>
+    <div id="header">
+    
+      
+
+            <nav>
+                <ul>
+                    <li><a href="#aboutus-section">私たちについて</a></li>
+                    <li><a href="http://www.keio-golf.com/blog/cat21939059/index.html" target="_blank">活動紹介</a></li>
+                    <li><a href="#interview-section">部員の声</a></li>
+                    <li><a href="#freshmen-section">新歓情報</a></li>
+                    <li><a class="nav-register-button" href="https://www.google.com/intl/ja_jp/forms/about/" target="_blank">説明会お申し込み</a></li>
+                </ul>
+
+            </nav>
+
+    </div>
+
+
+
+    <div id="first-view">
+
 
         <div class="rightimg-slider">
             <div><img class="pc_slideimg" src="image/pc_slide_img1.png" alt=""></div>
@@ -78,11 +90,17 @@
             </div>
             <div class="interview-dotbox">
 
-                <a class="js-modal-open" href="" data-target="modal01"><img src="image/yuna.png" alt="" class="yuna"></a>
+<!--            モーダル内の画像にposition:aboluteが響かない様にする為のclass↓-->
+             <div class="sp_member_container">
+                        <a class="js-modal-open" href="" data-target="modal01"><img src="image/yuna.png" alt="" class="yuna"></a>
 
-                <a class="js-modal-open" href="" data-target="modal02"><img src="image/ayaka.png" alt="" class="ayaka"></a>
+                        <a class="js-modal-open" href="" data-target="modal02"><img src="image/ayaka.png" alt="" class="ayaka"></a>
 
-                <a class="js-modal-open" href="" data-target="modal03"><img src="image/lisa.png" alt="" class="lisa"></a>
+                        <a class="js-modal-open" href="" data-target="modal03"><img src="image/lisa.png" alt="" class="lisa"></a>
+             
+             </div>
+
+
 
                 <div id="modal01" class="modal js-modal">
                     <div class="modal__bg js-modal-close"></div>
@@ -101,12 +119,7 @@
 
                                 <div class="modal_textbox">
                                     <h3>田中佑奈<span> 法学部政治学科3年</span></h3>
-                                    <p>ゴルフは努力した分だけ必ず結果がスコアとなって返ってくる
-                                        スポーツです。そして、体育会ゴルフ部には結果が出るまでの
-                                        辛い期間もそれを一緒に乗り越えてくれる仲間がいます。体育
-                                        会なので規律が厳しい面もありますが、部員が一致団結し、目
-                                        標に向かって助け合いながら日々努力する環境が魅力の一つだ
-                                        と思います。</p>
+                                    <p>ゴルフは努力した分だけ必ず結果がスコアとなって返ってくるスポーツです。そして、体育会ゴルフ部には結果が出るまでの辛い期間もそれを一緒に乗り越えてくれる仲間がいます。体育会なので規律が厳しい面もありますが、部員が一致団結し、目標に向かって助け合いながら日々努力する環境が魅力の一つだと思います。</p>
 
                                 </div>
                             </div>
@@ -267,7 +280,7 @@
                 <div class="sp_contact_small_flexbox">
                     <div class="sp_contact_textbox">
                         <h3>最新情報をチェック！</h3>
-                       <p>公式Instagramでは新歓の最新情報を発信しています。<br>部員紹介なども行なっているのでチェックしてみてください！</p>
+                        <p>公式Instagramでは新歓の最新情報を発信しています。<br>部員紹介なども行なっているのでチェックしてみてください！</p>
                     </div>
 
                     <div class="sp_contact_link ">
