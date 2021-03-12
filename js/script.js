@@ -25,6 +25,13 @@ $(document).ready(function() {
             });
         });
 
+$(document).ready(function() {
+  $('.drawer').drawer();
+});
+
+
+
+
 //$(window).load(function(){
 //    $('.slider_interview').slick({
 //        slidesToShow: 3,
@@ -62,6 +69,7 @@ $(document).ready(function() {
 //});
 
 
+
 $(function(){
     $('.js-modal-open').each(function(){
         $(this).on('click',function(){
@@ -78,3 +86,82 @@ $(function(){
         return false;
     }); 
 });
+
+        $(function() {
+            ScrollReveal().reveal('.fuwa', {
+                duration: 800, // アニメーションの完了にかかる時間
+                viewFactor: 0.2, // 0~1,どれくらい見えたら実行するか
+                reset: true, // 何回もアニメーション表示するか
+                origin: 'top',
+                distance: '20px',
+                responsive: [{
+                    breakpoint: 480, //ブレークポイント1の値
+                    settings: { //ブレークポイント1のオプション
+                        distance: '10px',
+                    }
+                }]
+
+            });
+
+        });
+
+    $(function() {
+            ScrollReveal().reveal('.aboutus_slidein', {
+                duration: 1500, // アニメーションの完了にかかる時間
+                viewFactor: 0.8, // 0~1,どれくらい見えたら実行するか
+                reset: true, // 何回もアニメーション表示するか
+                origin: 'right',
+                distance: '500px',
+                responsive: [{
+                    breakpoint: 480, //ブレークポイント1の値
+                    settings: { //ブレークポイント1のオプション
+                        distance: '10px',
+                    }
+                }]
+
+            });
+
+        });
+
+$(function() {
+            ScrollReveal().reveal('.interview_slidein', {
+                duration: 1500, // アニメーションの完了にかかる時間
+                viewFactor: 0.8, // 0~1,どれくらい見えたら実行するか
+                reset: true, // 何回もアニメーション表示するか
+                origin: 'left',
+                distance: '500px',
+                responsive: [{
+                    breakpoint: 480, //ブレークポイント1の値
+                    settings: { //ブレークポイント1のオプション
+                        distance: '10px',
+                    }
+                }]
+
+            });
+
+        });
+
+
+$(function() {
+            ScrollReveal().reveal('.freshmen_slidein', {
+                duration: 1500, // アニメーションの完了にかかる時間
+                viewFactor: 0.6, // 0~1,どれくらい見えたら実行するか
+                reset: true, // 何回もアニメーション表示するか
+                origin: 'right',
+                distance: '500px',
+                responsive: [{
+                    breakpoint: 480, //ブレークポイント1の値
+                    settings: { //ブレークポイント1のオプション
+                        distance: '10px',
+                    }
+                }]
+
+            });
+
+        });
+
+
+
+
+
+
