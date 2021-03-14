@@ -44,7 +44,12 @@ $(function(){
   let isOpen = false;
   $button.on('click', function() {
     isOpen ? close() : open();
-    isOpen = ! isOpen;   
+    isOpen = ! isOpen;  
+      $('a[href^="#"]').on('click', function() {
+      $('.hamburger-button').click(); // .menuをクリックした時と同じ処理
+
+
+    });
   });
     
     
@@ -88,3 +93,4 @@ $(function(){
     $button.addClass('close');
   }
 });
+
